@@ -1,0 +1,16 @@
+README
+
+The following files should be in HM4.zip:
+group.txt - list of all group members
+hmw4.R - source code
+hw4_report.pdf - homework 4 report
+
+How to Run the Code
+
+Code is split into sections preceded by comments of the following format:
+
+######### comment #########
+
+Run each of the sections sequentially top to bottom, but individually. This assignment is heavy on plots so some plots may overwrite the existing plot depending on the environment you are using.
+
+

@@ -1,0 +1,27 @@
+README
+
+Files in folder:
+group.txt - group names and netIds
+hw5multinomial.py - module needed for topic clustering
+hw5doc_cluster.py - code that will classify nips dataset (make sure it exists in the directory)
+hw5gauss.py - module needed for image segmentation
+hw5seg_image.py - code that will segment image
+hw5_journal.pdf - report discussing different initializtion techniques
+
+question1_plot.png
+question1_topics.pdf - list of topic 10 words for corresponding topic
+ocean_segmented10.jpg - clustered ocean.jpg with 10 clusters
+ocean_segmented20.jpg - clustered ocean.jpg with 20 clusters
+ocean_segmented50.jpg - clustered ocean.jpg with 50 clusters
+
+How to Cluster Text Files:
+1. Run hw5multinomial.py 
+2. Run hw5doc_cluster.py. Make sure that docword.nips.txt and vocab.nips.txt are within the same directory.
+
+How to Segment Image:
+1. Run hw5gauss.py
+2. Run hw5seg_image.py. It will ask you for three inputs.
+	a. the path of the image file you want to cluster.
+	b. the number of clusters you want to segment the image into. After this step the code will run the EM algorithm which might take a while.
+	c. after finishing the em algorithm, you will need to output the name of the output file.
+

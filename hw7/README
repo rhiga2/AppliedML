@@ -1,0 +1,22 @@
+README
+The folder should be contain the following files:
+hw7.R: Script containing code used for homework 7
+Homework7Report.pdf: The homework report
+group.txt
+
+In order to run hw7.R you must have glmnet installed.
+1) Run sections in the code from top to bottom. 
+2) I have some comments in ALL CAPS that allow the graders to manipulate the code.
+It allows me to remove repeated lines of code or code that may take too much time
+(i.e. cross-validating to find the optimal scale). 
+For example, the line below currently runs elastic net with alpha = 0.5.
+
+#CHANGE GLMNET PARAMETERS HERE
+tempModel = cv.glmnet(newTrGramMat, trTemp, alpha = 0.50) #temperature model
+
+You can change the line to the following in order to train the lasso model.
+
+#CHANGE GLMNET PARAMETERS HERE
+tempModel = cv.glmnet(newTrGramMat, trTemp, alpha = 1) #temperature model
+
+

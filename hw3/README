@@ -1,0 +1,19 @@
+How to run the code?
+The code is written in ipython notebook. You can download ipython notebook through environments such as canopy or anaconda from the following link: 
+http://jupyter.readthedocs.org/en/latest/install.html
+
+Type in you terminal:
+$ipython notebook 
+In the directory of the notebook.
+
+Source code is in hw3.ipynb
+
+Run the first cell to import all necessary modules. All the modules that I used should come with ipython notebook installation.
+
+The next four code cells should import data from pubfig_train_50000_pairs.txt, pubfig_kaggle_*.txt, and pubfig_kaggle_eval.txt. These dataset are necessary to run any of the parts in this assignment. 
+
+After running the necessary cells each subsection labeled with a header (# or ## by clicking on markdown cells) should be independent, meaning that you can run these cells separately. If you run into variable name issues, it might have been that you missed running a cell in the subsection. 
+
+At the end of each section, there should be a cell that outputs the solutions into text files with name conventions: evaluation_*_solution*.txt. These test files can be directly submitted to kaggle for testing without any modifications.   
+
+Note: that part 3 takes a while to run. I tried techniques such as random sampling and dimensionality reduction to reduce the computational time.

@@ -1,0 +1,12 @@
+README
+
+The directory should contain:
+Homework6Report.pdf
+hw6_1.R: Linear Regression
+hw6_2.R: Logistic Regression
+
+Instructions to run:
+1. Set working directory to a directory that contains the data.
+Note: For question 1, I used the dataset with chromatic features. 
+Note: that for question 2, I changed the format from .xls to .csv so that I could read the data with the function read.csv.
+2. The code in both R files run sequentially, meaning that you have to run code above before trying to run code below. Other than that there are no restrictions on how to run the code.   
