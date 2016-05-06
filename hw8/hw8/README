@@ -1,0 +1,39 @@
+The files contained in this directory are:
+group.txt - list of group members.
+cifar10 - directory containing cifar10 code.
+	cifar10_train.py - runs the training procedure.
+	cifar10_eval.py - runs the evaluation procedure.
+	cifar10_part4.py - contains my modified ncifar10 neural network.
+	all other files are unmodified from the tensorflow github code.
+mnist
+	mnist_functions.py - contains function necessary for training in part 1 and part2.
+	trainPt1.py - contains code from part 1.
+	trainPt2.py - contains code from part2.
+hw8.pdf - homework 8 report
+
+Mnist Execution
+1. Make sure both training files, trainPt1.py and trainPt2.py, can find mnist_functions.py. Theese files should all be within the same directory so it should not be a problem.
+
+2. Run trainPt1 to generate the model for part 1. You can change the logdirectory within the script to change the location of the logged tensorboard data; the relevant variable is named logdir.
+
+3. Run trainPt1 to generate the model for part 2. You can change the logdirectory within the script to change the location of the logged tensorboard data; the relevant variable is named logdir.
+
+Cifar10 Execution
+1. Both part 3 and 4 use the same code with minor changes. Makes sure that if you running part 4 that the train and evaluation scripts (cifar10_train.py and cifar10_eval.py) can find the script cifar10_part4.py. They should all be in the same directory by default.
+
+2. Depending if you are running part 3 or part 4 change the following line in both files.
+If you are running part 3, change the top line to:
+'''
+GLOBAL CONSTANT: CHANGE IF RUNNING PART 3 VS. PART 4
+'''
+INFERENCE = cifar10.inference
+
+If you are running part 4, change the top line to: 
+'''
+GLOBAL CONSTANT: CHANGE IF RUNNING PART 3 VS. PART 4
+'''
+INFERENCE = cifar10_part4.myinference
+
+cifar10_part4.myinference is a function I wrote in cifar10_part4.py that contains my modified convolutional neural network.
+
+2. Run cifar10_train.py and cifar10_eval.py simultaneously.
